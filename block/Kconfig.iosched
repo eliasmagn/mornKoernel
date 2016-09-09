@@ -142,15 +142,7 @@ config DEFAULT_IOSCHED
 	default "noop" if DEFAULT_NOOP
 	default "fiops" if DEFAULT_FIOPS
 	default "sio" if DEFAULT_SIO
-<<<<<<< HEAD
-=======
-	default "fifo" if DEFAULT_FIFO
-	default "sioplus" if DEFAULT_SIOPLUS
-	default "tripndroid" if DEFAULT_TRIPNDROID
-	default "vr" if DEFAULT_VR
 	default "zen" if DEFAULT_ZEN
->>>>>>> b564fad4bd87... block: add zen scheduler
-
 endmenu
 
 endif

@@ -1,4 +1,4 @@
-ndroid kernel for OnePlus msm8996 devices build script by jcadduono
+#android kernel for OnePlus msm8996 devices build script by jcadduono
 
 ################### BEFORE STARTING ################
 #
@@ -96,11 +96,7 @@ INSTALL_MODULES() {
 		INSTALL_MOD_STRIP=1 \
 		modules_install
 do
-	read -rp "Build failed. Retry? " do_retry
-	case $do_retry in
-		Y|y) continue ;;
-		*) return 1 ;;
-	esac
+	exit 1
 done
 rm build/lib/modules/*/build build/lib/modules/*/source
 																																		    }

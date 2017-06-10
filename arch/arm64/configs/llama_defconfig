@@ -2,6 +2,19 @@
 # Automatically generated file; DO NOT EDIT.
 # Linux/arm64 3.18.31 Kernel Configuration
 #
+
+#
+#LlamaSweet add
+#
+#
+CONFIG_FB_MSM_MDSS_KCAL_CTRL=y
+CONFIG_IOSCHED_ZEN=y
+CONFIG_TOUCHBOOST_CONTROL=y
+
+
+
+
+
 CONFIG_ARM64=y
 CONFIG_64BIT=y
 CONFIG_ARCH_PHYS_ADDR_T_64BIT=y

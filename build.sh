@@ -24,6 +24,9 @@ CPU_THREADS=$(grep -c "processor" /proc/cpuinfo)
 # amount of cpu threads to use in kernel make process
 THREADS=$((CPU_THREADS + 1))
 
+export KBUILD_BUILD_USER=LlamaSweet
+export LOCALVERSION="LlamaSweet"
+
 ############## SCARY NO-TOUCHY STUFF ###############
 
 ABORT() {

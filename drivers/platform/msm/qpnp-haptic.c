@@ -1861,7 +1861,7 @@ static void qpnp_hap_worker(struct work_struct *work)
 		qpnp_hap_set(hap, hap->state);
 	}
 
-	if (hap->vcc_pon && !reg_en &&(hap->state == 0)) {
+	if (hap->vcc_pon && !reg_en ) {
 		rc = regulator_disable(hap->vcc_pon);
 		if (rc)
 			pr_err("%s: could not disable vcc_pon regulator\n",

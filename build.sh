@@ -80,11 +80,7 @@ SETUP_BUILD() {
 BUILD_KERNEL() {
 	echo "Starting build for $LOCALVERSION..."
 	while ! make -C "$RDIR" O=build -j"$THREADS"; do
-		read -rp "Build failed. Retry? " do_retry
-		case $do_retry in
-			Y|y) continue ;;
-			*) return 1 ;;
-		esac
+		exit 1
 	done
 }
 
